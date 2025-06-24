@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="It">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- CSS Custom -->
+
+        <link rel="stylesheet" href="style/stylesheet.css"/>
+
+        <!--Bootstrap icon-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <!--Icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- DublinCore -->
+
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+        <meta name="DC.Title" content="Elisabetta Sirani"/>
+        <meta name="DC.Creator" content="Aurora Pia Latiano"/>
+        <meta name="DC.Subject" content="Elisabetta Sirani,quadri"/>
+        <meta name="DC.Description" content="Un catalogo contenente alcune delle opere di Elisabetta Sirani"/>
+        <meta name="DC.Publisher" content="Github Pages"/>
+        <meta name="DC.Date" content="2025/05/14"/>
+        <meta name="DC.Type" content="Catalogo web"/>
+        <meta name="DC.Format" content="Sito web"/>
+        <meta name="DC.Source" content="Opere di Elisabetta Sirani"/>
+
+        <!-- Sezione Title -->
+		<title>Elisabetta Sirani</title>
+	</head>
+	<body>
+	 <!-- HERO SECTION -->
+	<header class="hero">
+		<div class="overlay">
+	    	<div class="hero-text">
+	    		<h1>Elisabetta Sirani</h1>
+	    		<p>Esplora le opere della famosa pittrice bolognese</p>
+	    	</div>
+		    <div class="search-bar">
+		    	<input type="text" placeholder="Cerca...">
+		        <button><i class="bi bi-search"></i></button>
+		    </div>
+	    </div>
+	</header>
+
+	  <!-- NAVBAR -->
+	<nav class="navbar">
+	    <ul>
+	      	<li><a href="index.html">Home</a></li>
+	      	<li>
+	      		<div class="dropdown">
+	      			<button class="dropbtn">Catalogo</button>
+		      		<div class="dropdown-content">
+	   					<a href="catalogo.html">Le opere</a>
+					    <a href="vita.html">La vita</a>
+					    <a href="diario.html">Risorse</a>
+					</div>
+				</div>
+			</li>
+	      	<li><a href="luoghi.html">Prenota</a></li>
+	      	<li><a href="accedi.html">Accedi <i class="bi bi-person-fill"></i></a></li>
+	    </ul>
+	</nav>
+
+	<div class="geo">
+		<p><a href="index.html">Home</a>/<a href="catalogo.html">Catalogo</a>/Opera</p>
+	</div>
+
+	  <!-- DETTAGLIO OPERA -->
+		<section class="dettaglio-opera">
+		    <div class="opera-img">
+		      <img src="images/img1.jpg" alt="Opera Dettaglio">
+		      <ul class="research">
+		      	<li><button>Informazioni <i class="bi bi-info-square-fill"></i></button></li>
+		      	<li><button>Scarica immagine <i class="bi bi-file-earmark-arrow-down-fill"></i></button></li>
+		      	<li><button >Copia Link <i class="bi bi-clipboard2-check-fill"></i></button></li>
+		      </ul>
+		    </div>
+		    <div class="opera-desc">
+		      <h2>Porzia si ferisce alla coscia</h2>
+				<p>In primo piano, riccamente abbigliata, osserviamo Porzia,seduta con un pugnale in mano si ferisce ad una coscia. In secondo piano, attraverso una porta vediamo altri tre personaggi che discutono ignari.</p>
+				<br>
+				<table>
+				  <tr>
+				    <th>Datazione</th>
+				    <td>1664</td>
+				  </tr>
+				  <tr>
+				    <th>Soggetto rappresentato</th>
+				    <td>Porzia, moglie di Bruto</td>
+				  </tr>
+				  <tr>
+				    <th>Tecnica</th>
+				    <td>Olio su tela</td>
+				  </tr>
+				  <tr>
+				    <th>Museo</th>
+				    <td>Museo di Santa Maria della Vita.</td>
+				  </tr>
+				  <tr>
+				    <th>Misure</th>
+				    <td>101x138</td>
+				  </tr>
+				</table>
+		    </div>
+		</section>
+
+	  <!-- SEZIONE RECENSIONE -->
+	  	<section class="recensione">
+	    	<h2>Lascia la tua recensione</h2>
+	    	<form>
+		     	 <input type="text" placeholder="Il tuo nome" required>
+		     	 <textarea placeholder="Scrivi la tua recensione..." rows="5" required></textarea>
+		      	<button type="submit">Invia</button>
+	    	</form>
+		</section>
+
+	 <!-- PAGINAZIONE -->
+	  <div class="paginazione">
+	    <a href="catalogo.html"><button title="Torna al catalogo">&laquo; Indietro</button></a>
+	    <a href="dettaglio.html"><button title="Vai alle altre opere">Avanti &raquo;</button></a>
+	  </div>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="reviews">
+			  <h3>Vuoi vedere qualcosa di più?</h3>
+			  <form action="#" method="post">
+			    <textarea name="recensione" rows="3" placeholder="Lasciaci il tuo feedback..."></textarea>
+			    <button type="submit">Invia</button>
+			  </form>
+			</div>
+
+			<!-- Sezione "Seguici" -->
+			<div class="social">
+			  <h3>Seguici</h3>
+			  <div>
+				<a data-mdb-ripple-init class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+			    <a data-mdb-ripple-init class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a data-mdb-ripple-init class="btn btn-primary" style="background-color: #ed302f;" href="#!" role="button"><i class="fab fa-youtube"></i></a>
+			  </div>
+			</div>
+
+			<!-- Sezione contatti -->
+			<div class="contacts">
+			  <h3>Contatti</h3>
+			  <p>Aurora Pia Latiano</p>
+			  <p>Tutti i diritti riservati</p>
+			  <p><a href="mailto:email@raccolta.com">email@raccolta.com</a></p>
+			  <p><a href="WebProjectPlan.html">Web Project Plan</a></p>
+			</div>
+		</footer>
+	</body>
+</html>

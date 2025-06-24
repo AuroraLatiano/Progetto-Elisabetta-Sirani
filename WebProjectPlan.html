@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="It">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- CSS Custom -->
+
+        <link rel="stylesheet" href="style/stylesheet.css"/>
+
+        <!--Icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- DublinCore -->
+
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+        <meta name="DC.Title" content="Elisabetta Sirani"/>
+        <meta name="DC.Creator" content="Aurora Pia Latiano"/>
+        <meta name="DC.Subject" content="Elisabetta Sirani,quadri"/>
+        <meta name="DC.Description" content="Un catalogo contenente alcune delle opere di Elisabetta Sirani"/>
+        <meta name="DC.Publisher" content="Github Pages"/>
+        <meta name="DC.Date" content="2025/05/14"/>
+        <meta name="DC.Type" content="Catalogo web"/>
+        <meta name="DC.Format" content="Sito web"/>
+        <meta name="DC.Source" content="Opere di Elisabetta Sirani"/>
+
+        <!-- Sezione Title -->
+		<title>Elisabetta Sirani</title>
+
+		<style type="text/css">
+			.wbp-container {
+				color: #555;
+			    margin: 0 60px 0 60px;
+			}
+			h1, h2 {
+			    margin-bottom: 8px;
+			}
+			h1 {
+			    font-size: 40px;
+			    text-align: center;
+			    margin-bottom: 24px;
+			}
+			h2 {
+			    font-size: 30px;
+			    margin-top: 24px;
+			    margin-bottom: 13px;
+			}
+			p {
+			    margin-bottom: 16px;
+			    font-size: 16px;
+			}
+			ul {
+			    margin-left: 19px;
+			    margin-bottom: 16px;
+			    padding-left: 16px;
+			}
+			a {
+			    color: #a33a3a;
+			    text-decoration: none;
+			}
+			a:hover {
+			    text-decoration: underline;
+			}
+			img {
+			    display: block;
+			    max-width: 60%;
+			    height: auto;
+			    margin: 16px auto;
+			    border-radius: 6px;
+			    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+			}
+			.section ul li img {
+			    max-width: 50%%;
+			    margin: 0 auto;
+			}
+			.section {
+			    margin-bottom: 32px;
+			}
+			.section ul p {
+			    margin: 5px 0 16px 0;
+			}
+			.section ul li {
+			    margin-bottom: 6px;
+			}
+			.section ul li p {
+			    margin-top: 3;
+			}
+			@media (max-width: 600px) {
+			    .container {
+			        padding: 0 15px;
+			    }
+			    img {
+			        max-width: 90%;
+			    }
+			    h1 {
+			        font-size: 24px;
+			    }
+			    h2 {
+			        font-size: 23px;
+			    }
+			}
+		</style>
+	</head>
+
+	<body>
+		 <!-- HERO SECTION -->
+		<header class="hero">
+			<div class="overlay">
+		    	<div class="hero-text">
+		    		<h1>Elisabetta Sirani</h1>
+		    		<p>Esplora le opere della famosa pittrice bolognese</p>
+		    	</div>
+			    <div class="search-bar">
+			    	<input type="text" placeholder="Cerca...">
+			        <button><i class="bi bi-search"></i></button>
+			    </div>
+		    </div>
+		</header>
+
+		  <!-- NAVBAR -->
+		<nav class="navbar">
+		    <ul>
+		      	<li><a href="index.html">Home</a></li>
+		      	<li>
+		      		<div class="dropdown">
+		      			<button class="dropbtn">Catalogo</button>
+			      		<div class="dropdown-content">
+		   					<a href="catalogo.html">Le opere</a>
+						    <a href="vita.html">La vita</a>
+						    <a href="diario.html">Risorse</a>
+						</div>
+					</div>
+				</li>
+		      	<li><a href="luoghi.html">Prenota</a></li>
+		      	<li><a href="accedi.html">Accedi <i class="bi bi-person-fill"></i></a></li>
+		    </ul>
+		</nav>
+
+		<!--WEB PROJECT PLAN-->
+    <div class="wbp-container">
+        <div class="section">
+            <h2>Idea(abstract)</h2>
+            <p>Creare una collezione digitale delle opere di Elisabetta Sirani, facilitandone la consultazione tramite strumenti interattivi come l'integrazione di una timeline biografica per contestualizzare le opere e la vita dell'autrice, e una sezione per la prenotazione di visite a musei e risorse correlate, offrendo agli utenti la possibilità di accedere a contenuti online e di programmare esperienze in presenza.</p>
+        </div>
+
+        <div class="section">
+            <h2>Brief</h2>
+            <ul>
+                <li>Obiettivi</li>
+				<p>Il progetto mira a semplificare la consultazione delle opere di Elisabetta Sirani attraverso un'interfaccia utente intuitiva, che consente l'interazione mediante recensioni, buttons e schede dinamiche.</p>
+
+				<li>Utenza</li>
+				<p>Il target include studenti e appassionati di storia dell'arte, oltre a curiosi occasionali. Gli utenti possono registrarsi per lasciare commenti e scaricare immagini, oppure restare ospiti con le stesse funzionalità.</p>
+
+				<li>Accesso</li>
+				<p>La piattaforma privilegia immagini e video per valorizzare le opere. Il design responsive garantisce un'esperienza ottimale su più dispositivi, sebbene il PC rimanga il mezzo principale di accesso.</p>
+
+				<li>Raccolta</li>
+				<p>Le immagini sono state selezionate tramite servizi Google con licenze Creative Commons, mentre i video sono stati integrati tramite YouTube. Le icone sono implementate utilizzando FontAwesome e Bootstrap.</p>
+            </ul>
+        </div>
+
+		<div class="section">
+		    <h2>Benchmark</h2>
+		    <ul>
+		        <li>Analisi di mercato</li>
+		        <p>Nonostante l'esistenza di numerosi cataloghi d'arte, manca una piattaforma specifica dedicata alla consultazione delle opere di Elisabetta Sirani che integri funzionalità come la prenotazione di visite museali, recensioni interattive, filtri per una ricerca ottimizzata e accesso a risorse alternative fondamentali per approfondimenti.</p>
+
+		        <li>Descrizione della concorrenza</li>
+		        <p>Esistono altre piattaforme con soluzioni simili, tra cui <a href="https://www.storiaememoriadibologna.it/archivio/persone/sirani-elisabetta" target="_blank">Storia e Memoria di Bologna</a>, che offre una mappa interattiva per localizzare le opere, un punto di forza, ma non è un catalogo dedicato esclusivamente all'artista. Altri esempi includono <a href="https://digital.fondazionecarisbo.it/category/dipinti" target="_blank">Fondazione Carisbo</a>, con un archivio ampio ma un'interfaccia poco intuitiva, e <a href="https://soloarte.atelierdesarts.com/artisti/old/s/sirani-elisabetta.html" target="_blank">SoloArte</a>, che pur mostrando quasi tutte le opere dell'autrice, non permette una consultazione efficiente e presenta un layout datato.</p>
+		    </ul>
+		</div>
+
+
+		<div class="section">
+		    <h2>Struttura</h2>
+		    <ul>
+		        <li>Mappa concettuale</li>
+		        <p><img src="images/drawio.png" alt="Mappa concettuale"></p>
+		        <p>La mappa concettuale illustra le principali tappe della produzione artistica di Elisabetta Sirani. Gli elementi chiave includono:</p>
+		        <ul>
+		            <li>Le opere, che rappresentano il nucleo centrale del sito.</li>
+		            <li>La biografia, suddivisa in due fasi principali: la vita dell'autrice e la sua riscoperta nel XIX secolo.</li>
+		            <li>I tre luoghi principali di conservazione delle opere.</li>
+		        </ul>
+
+		        <li>Schema delle dipendenze</li>
+		        <p><img src="images/schema.png" alt="Schema delle dipendenze"></p>
+		        <p>Lo schema delle dipendenze descrive l'organizzazione gerarchica delle pagine del sito. La Homepage costituisce il punto di accesso centrale, con collegamenti diretti alle principali sezioni del sito:</p>
+		        <ul>
+		            <li>Le opere: Funzione di catalogo che include un elenco completo delle opere, con link a pagine dedicate contenenti informazioni dettagliate.</li>
+		            <li>Vita: Timeline interattiva che descrive i momenti chiave della vita dell'artista, con immagini di opere o luoghi salienti in copertina.</li>
+		            <li>Risorse: Sezione dedicata a materiali aggiuntivi come video e libri, per approfondimenti sull'artista e sul contesto storico.</li>
+		            <li>Prenota: Funzione per pianificare visite a musei che ospitano le opere della Sirani.</li>
+		            <li>Accedi: Pagina di login per accedere a un'area personale.</li>
+		        </ul>
+		        <p><strong>Struttura gerarchica:</strong></p>
+		        <ul>
+		            <li>Livello 1: Homepage - Punto di ingresso principale.</li>
+		            <li>Livello 2: Pagine principali (Le opere, Vita, Risorse, Prenota, Accedi).</li>
+		            <li>Livello 3: Pagina di dettaglio dell'opera, con strumenti interattivi (download, recensioni, consultazione tabellare).</li>
+		        </ul>
+
+		        <li>Categorie descrittive</li>
+		        <p>Le categorie descrittive utilizzate nel progetto possono essere visualizzate nel dettaglio dell'opera <em>Porzia si ferisce alla coscia</em>:</p>
+		        <ul>
+		            <li><strong>Titolo</strong>: Porzia si ferisce alla coscia</li>
+		            <li><strong>Autore</strong>: Elisabetta Sirani</li>
+		            <li><strong>Descrizione</strong>: Porzia, in primo piano e riccamente abbigliata, si ferisce alla coscia con un pugnale. Sullo sfondo, attraverso una porta, si distinguono tre figure impegnate in una conversazione.</li>
+		            <li><strong>Datazione</strong>: 1664</li>
+		            <li><strong>Soggetto</strong>: Porzia, moglie di Bruto</li>
+		            <li><strong>Tecnica</strong>: Olio su tela</li>
+		            <li><strong>Museo</strong>: Collezione Lorem Ipsum, Bologna</li>
+		            <li><strong>Misure</strong>: 101 x 138 cm</li>
+		        </ul>
+		    </ul>
+		</div>
+
+
+		<div class="section">
+		    <h2>Wireframe</h2>
+		    <ul>
+		        <li><img src="images/Home.png" alt="Wireframe Homepage"></li>
+		        <p>Il wireframe della homepage presenta una struttura organizzata come segue:</p>
+		        <ul>
+		            <li><strong>Testata</strong>: Heroimage con un apparato di ricerca.</li>
+		            <li><strong>Navbar sticky</strong>: Navigazione primaria con un dropbutton per la navigazione secondaria.</li>
+		            <li><strong>Corpo principale</strong>:
+		                <ul>
+		                    <li>Sezione introduttiva con immagine e descrizione del progetto.</li>
+		                    <li>Carosello con overflow collegato al catalogo; i titoli delle opere sono cliccabili e rimandano alla pagina di dettaglio.</li>
+		                    <li>Sezione informativa con un button che consente un rapido accesso alla pagina delle risorse.</li>
+		                </ul>
+		            </li>
+		            <li><strong>Footer</strong>: Uniforme in tutte le pagine, include feedback, social e contatti.</li>
+		        </ul>
+
+		        <li><img src="images/Catalogo.png" alt="Wireframe Catalogo"></li>
+		        <p>Il wireframe del catalogo presenta:</p>
+		        <ul>
+		            <li><strong>Testata, navbar e footer</strong>: Identici alla homepage.</li>
+		            <li><strong>Corpo principale</strong>:
+		                <ul>
+		                    <li>Sezione filtri.</li>
+		                    <li>Prime tre opere della collezione.</li>
+		                    <li>Ultime tre opere della collezione.</li>
+		                </ul>
+		            </li>
+		            <li><strong>Navigazione</strong>: Due buttons per tornare alla homepage o accedere al dettaglio delle opere.</li>
+		        </ul>
+
+		        <li><img src="images/Dettaglio.png" alt="Wireframe Dettaglio"></li>
+		        <p>Il wireframe del dettaglio include:</p>
+		        <ul>
+		            <li><strong>Prima sezione</strong>: Divisa in due colonne:
+		                <ul>
+		                    <li>Colonna immagine con buttons per download, informazioni aggiuntive e copia link.</li>
+		                    <li>Colonna descrizione con una tabella delle categorie descrittive.</li>
+		                </ul>
+		            </li>
+		            <li><strong>Seconda sezione</strong>: Area recensioni.</li>
+		            <li><strong>Terza sezione</strong>: Paginazione; pulsante indietro porta alla homepage, avanti riporta alla testata.</li>
+		        </ul>
+
+		        <li><img src="images/Vita.png" alt="Wireframe Vita"></li>
+		        <p>Il wireframe della scheda vita presenta:</p>
+		        <ul>
+		            <li><strong>Sezione introduttiva</strong>: Biografia dell'autrice.</li>
+		            <li><strong>Seconda sezione</strong>: Container con cards animate che mostrano dettagli della vita dell'artista, collegati agli anni rappresentati nei container.</li>
+		        </ul>
+
+		        <li><img src="images/Risorse.png" alt="Wireframe Risorse"></li>
+		        <p>Il wireframe delle risorse è diviso in tre sezioni:</p>
+		        <ul>
+		            <li>Invito all'utilizzo delle risorse consigliate.</li>
+		            <li>Loop infinito di video YouTube selezionati.</li>
+		            <li>Sezione di ricerca con immagini di copertina di libri e buttons per consultarle.</li>
+		        </ul>
+
+		        <li><img src="images/Mappa.png" alt="Wireframe Mappa"></li>
+		        <p>Il wireframe della mappa è suddiviso in:</p>
+		        <ul>
+		            <li><strong>Sezione introduttiva</strong>.</li>
+		            <li><strong>Sezione principale</strong>:
+		                <ul>
+		                    <li>Mappa interattiva con punti cliccabili e pop-up per accedere alle pagine dei musei.</li>
+		                    <li>Tre immagini cliccabili dei musei con messaggi di alert per il nome del museo.</li>
+		                </ul>
+		            </li>
+		            <li>Form di prenotazione per il museo selezionato.</li>
+		        </ul>
+
+		        <li><img src="images/Accedi.png" alt="Wireframe Accedi"></li>
+		        <p>Il wireframe della sezione d'accesso presenta:</p>
+		        <ul>
+		            <li>Container con il form d'accesso.</li>
+		            <li>Link che apre un modal contenente un form di registrazione.</li>
+		        </ul>
+		    </ul>
+		</div>
+
+
+			<div class="section">
+			    <h2>Usabilità</h2>
+			    <p>L'usabilità della pagina è stata ottimizzata attraverso diverse soluzioni:</p>
+			    <ul>
+			        <li><strong>Architettura uniforme:</strong> Testata, navbar e footer mantengono le loro posizioni in tutte le pagine.</li>
+			        <li><strong>Sticky navbar:</strong> Facilita la navigazione restando visibile nella parte superiore dello schermo. L'ho resa responsive e quindi adattabie ad ogni tipo di piattaforma.</li>
+			        <li><strong>Evidenziazione:</strong> Presente in tutte le pagine ad eccezione della hompage e sottolinea le pagine visitabili con navigazione gerarchica all'indietro.</li>
+			        <li><strong>Suddivisione per sezioni:</strong> Ogni pagina è organizzata in sezioni e colonne dedicate a contenuti specifici per semplificarne la leggibilità.</li>
+			        <li><strong>Button di paginazione:</strong> Presenti nelle pagine "Catalogo" e "Dettaglio", permettono una navigazione semplice senza bisogno di risalire la pagina.</li>
+			        <li><strong>Design responsivo:</strong> Implementato con media queries e Flexbox per adattarsi a dispositivi diversi.</li>
+			        <li><strong>Interattività:</strong> Usata con transizioni CSS, mappa JavaScript e componenti Bootstrap come il carosello della homepage.</li>
+			    </ul>
+			    <p>Il design grafico si basa su un approccio moderno e immediato grazie all'utilizzo di:</p>
+			    <ul>
+			        <li><strong>Font:</strong> Arial, essendo sans-serif è stato scelto per la leggibilità.</li>
+			        <li><strong>Colori:</strong> Grigio chiaro, bianco, rosa per sfondi e bottoni; bordeaux per navbar e footer, in linea con le tonalità delle opere di Elisabetta Sirani.</li>
+			        <li><strong>Tipografia:</strong> Grandezza variabile in base all'elemento (header, paragrafo, bottone).</li>
+			        <li><strong>Immagini:</strong> Utilizzano attributi "alt"; alcune, come quelle di dettaglio, anche "title" e infine le immagini della sezione "Prenota" aprono una finestra Alert.</li>
+			        <li><strong>Icone:</strong> Scelte da Bootstrap Icons e integrate tramite tag <code>&lt;i&gt;</code>.</li>
+			    </ul>
+			</div>
+
+			<div class="section">
+			    <h2>Strumenti per l'interazione</h2>
+			    <ul>
+			        <li>Bottoni: con una leggera ombra, al passaggio del mouse sono dotati di una leggera transizione che li ingrandisce.</li>
+			        <li>Cards: utilizzate per raccogliere le immagini, come nel caso del carosello della hompage, oppure informazioni interattive come nelle flippable cards della timeline.</li>
+			        <li>Tooltips: presenti sui buttons di "Catalogo" e "Dettaglio", per consentire all'utente di comprendere dove portano. Utilizzati anche sull'opera che rimanda alla pagina di dettaglio.</li>
+			        <li>Dropdown: presente nella navbar consente alle pagine di avere una navigazione secondaria.</li>
+			        <li>Carousel: implementato nella home per dare un primo sguardo ai contenuti della pagina principale del sito, con un implemento interattivo. Usato invece nella pagina "Risorse" per dare uno sguardo ai video.</li>
+			        <li>Modal: utilizzato come form contenente il login.</li>
+			        <li>Alert: presente nella pagina "Prenota" e attivabile con un click sulle immagini.</li>
+			        <li>Pagination: rende utile la navigazione all'interno del sito.</li>
+			        <li>Sticky navbar: con proprietà sticky la navbar permette di essere consultata anche senza risalire la pagina.</li>
+			        <li>Mappa: con le proprietà interattive ha dei markers cliccabili con pop-up a comparsa che permettono di visualizzare le pagine dei musei proposti.</li>
+			    </ul>
+			</div>
+
+			<div class="section">
+			    <h2>Bibliografia</h2>
+			    <p><strong>Software e web application utilizzati:</strong></p>
+			    <ul>
+			        <li>Mappa interattiva realizzata con <a href="https://leafletjs.com/" target="_blank">LeafletJS</a>.</li>
+			        <li>Wireframes realizzati con <a href="https://balsamiq.com/" target="_blank">Balsamiq Wireframes</a>.</li>
+			        <li>Mappa concettuale e schema delle dipendenze realizzati con <a href="https://app.diagrams.net/" target="_blank">Diagrams.net</a>.</li>
+			        <li>Sito pubblicato con <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</li>
+			        <li>Codice realizzato con <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>.</li>
+			    </ul>
+			    <p><strong>Testi e immagini:</strong></p>
+			    <ul>
+			        <li>Immagini ricavate da Google Immagini.</li>
+			        <li>Testi prodotti autonomamente e verificati tramite:
+			            <ul>
+			                <li><a href="https://digital.fondazionecarisbo.it/category/dipinti" target="_blank">Fondazione Carisbo</a></li>
+			                <li><a href="https://it.wikipedia.org/wiki/Elisabetta_Sirani" target="_blank">Wikipedia</a></li>
+			            </ul>
+			        </li>
+			    </ul>
+			    <p><strong>Codice:</strong> Basato sulla documentazione di Bootstrap, JavaScript, sezioni HowTo di <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> e carosello implementato su modello di <a href="https://freefrontend.com/javascript-carousels/">FreeFronted</a>.</p>
+			</div>
+		</div>	
+	 
+
+		<!-- FOOTER -->
+		<footer>
+			<!-- Sezione recensioni -->
+			<div class="reviews">
+			  <h3>Vuoi vedere qualcosa di più?</h3>
+			  <form action="#" method="post">
+			    <textarea name="recensione" rows="3" placeholder="Lasciaci il tuo feedback..."></textarea>
+			    <button type="submit">Invia</button>
+			  </form>
+			</div>
+
+			<!-- Sezione "Seguici" -->
+			<div class="social">
+			  <h3>Seguici</h3>
+			  <div>
+				<a data-mdb-ripple-init class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+			    <a data-mdb-ripple-init class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a data-mdb-ripple-init class="btn btn-primary" style="background-color: #ed302f;" href="#!" role="button"><i class="fab fa-youtube"></i></a>
+			  </div>
+			</div>
+
+			<!-- Sezione contatti -->
+			<div class="contacts">
+			  <h3>Contatti</h3>
+			  <p>Aurora Pia Latiano</p>
+			  <p>Tutti i diritti riservati</p>
+			  <p><a href="mailto:email@raccolta.com">email@raccolta.com</a></p>
+			  <p><a href="WebProjectPlan.html">Web Project Plan</a></p>
+			</div>
+		</footer>
+	</body>
+</html>

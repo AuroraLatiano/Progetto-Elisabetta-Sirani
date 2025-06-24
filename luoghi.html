@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="It">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- CSS Custom -->
+
+        <link rel="stylesheet" href="style/stylesheet.css"/>
+
+        <!--Icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- DublinCore -->
+
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+        <meta name="DC.Title" content="Elisabetta Sirani"/>
+        <meta name="DC.Creator" content="Aurora Pia Latiano"/>
+        <meta name="DC.Subject" content="Elisabetta Sirani,quadri"/>
+        <meta name="DC.Description" content="Un catalogo contenente alcune delle opere di Elisabetta Sirani"/>
+        <meta name="DC.Publisher" content="Github Pages"/>
+        <meta name="DC.Date" content="2025/05/14"/>
+        <meta name="DC.Type" content="Catalogo web"/>
+        <meta name="DC.Format" content="Sito web"/>
+        <meta name="DC.Source" content="Opere di Elisabetta Sirani"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+        <!-- Sezione Title -->
+		<title>Elisabetta Sirani</title>
+	</head>
+	<body>
+		 <!-- HERO SECTION -->
+		<header class="hero">
+			<div class="overlay">
+		    	<div class="hero-text">
+		    		<h1>Elisabetta Sirani</h1>
+		    		<p>Esplora le opere della famosa pittrice bolognese</p>
+		    	</div>
+			    <div class="search-bar">
+			    	<input type="text" placeholder="Cerca...">
+			        <button><i class="bi bi-search"></i></button>
+			    </div>
+		    </div>
+		</header>
+
+		  <!-- NAVBAR -->
+		<nav class="navbar">
+		    <ul>
+		      	<li><a href="index.html">Home</a></li>
+		      	<li>
+		      		<div class="dropdown">
+		      			<button class="dropbtn">Catalogo</button>
+			      		<div class="dropdown-content">
+		   					<a href="catalogo.html">Le opere</a>
+						    <a href="vita.html">La vita</a>
+						    <a href="diario.html">Risorse</a>
+						</div>
+					</div>
+				</li>
+		      	<li><a href="luoghi.html">Prenota</a></li>
+		      	<li><a href="accedi.html">Accedi <i class="bi bi-person-fill"></i></a></li>
+		    </ul>
+		</nav>
+
+	<div class="geo">
+		<p><a href="index.html">Home</a>/Prenota</p>
+	</div>	
+
+				<!-- INFO SECTION -->
+		<section class="info-section">
+			<div class="text">
+			    <h2>Prenota una visita in uno dei musei</h2>
+                <p>Dopo la riscoperta delle opere dell'autrice Bologna ha proposto la loro esposizione in chiese o enti pubblici. Prenota ora un tour guidato!</p>
+			</div>
+      	</section>		
+
+		<!-- MAPPA -->
+		<div class="layout">
+			<div id="map"></div>
+
+			<div class="right-content">
+	            <div class="images">
+	                <img src="images/palazzo.JPEG" alt="Palazzo d'Accursio" onclick="alert('Palazzo dAccursio')">
+	                <img src="images/piancoteca.JPEG" alt="Pinacoteca di Bologna" onclick="alert('Pinacoteca Nazionale')">
+	                <img src="images/madonna.JPG" alt="Chiesa di Galleira" onclick="alert('Chiesa della Madonna di Galleira')">
+	            </div>
+
+	            <div class="booking-form">
+	                <form action="#" method="post">
+	                    <label for="name">Nome:</label>
+	                    <input type="text" id="name" name="name" required>
+
+	                    <label for="email">Email:</label>
+	                    <input type="email" id="email" name="email" required>
+
+	                    <label for="date">Data di Visita:</label>
+	                    <input type="date" id="date" name="date" required>
+
+	                    <label for="message">Messaggio:</label>
+	                    <textarea id="message" name="message" rows="4"></textarea>
+
+	                    <button type="submit">Prenota</button>
+	                </form>
+	            </div>
+	        </div>
+	    </div>
+
+			<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+			<script>
+				const map = L.map('map').setView([44.494887, 11.342616], 14);
+				console.log("Script Leaflet caricato correttamente")
+	    		// Aggiungi il layer di OpenStreetMap
+
+	    		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		    		maxZoom: 18,
+		    		attribution: '&copy; OpenStreetMap contributors'
+		    		}).addTo(map);
+
+
+			    // Marker per la Pinacoteca Nazionale
+			    L.marker([44.495591, 11.352712])
+	      		.addTo(map)
+	      		.bindPopup(`
+	        	<b>Pinacoteca Nazionale di Bologna</b><br>
+	        	<a href="https://pinacotecabologna.beniculturali.it/" target="_blank" rel="noopener noreferrer">
+	          	Visita il sito ufficiale
+	        	</a>
+	     		 `);
+
+
+			    // Marker per la Chiesa di Galliera
+			    L.marker([44.496222, 11.341570])
+			    .addTo(map)
+			    .bindPopup(`
+			    <b>Chiesa di Santa Maria in Galliera</b><br>
+			    <a href="https://www.storiaememoriadibologna.it/archivio/luoghi/chiesa-della-madonna-di-galliera" target="_blank" rel="noopener noreferrer">
+			          Scopri di più
+			    </a>
+			    `);
+
+
+			    // Marker per il Palazzo d'Accursio
+			    L.marker([44.493658, 11.342747])
+	      		.addTo(map)
+	      		.bindPopup(`
+	       		<b>Palazzo d'Accursio</b><br>
+	      		<a href="https://www.bolognawelcome.com/it/luoghi/torri-edifici-storici/palazzo-daccursio-o-comunale" target="_blank" rel="noopener noreferrer">
+	          	Scopri di più
+	        	</a>
+	      		`);
+			</script>
+
+		<!-- FOOTER -->
+		<footer>
+			<!-- Sezione recensioni -->
+			<div class="reviews">
+			  <h3>Vuoi vedere qualcosa di più?</h3>
+			  <form action="#" method="post">
+			    <textarea name="recensione" rows="3" placeholder="Lasciaci il tuo feedback..."></textarea>
+			    <button type="submit">Invia</button>
+			  </form>
+			</div>
+
+			<!-- Sezione "Seguici" -->
+			<div class="social">
+			  <h3>Seguici</h3>
+			  <div>
+				<a data-mdb-ripple-init class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+			    <a data-mdb-ripple-init class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a data-mdb-ripple-init class="btn btn-primary" style="background-color: #ed302f;" href="#!" role="button"><i class="fab fa-youtube"></i></a>
+			  </div>
+			</div>
+
+			<!-- Sezione contatti -->
+			<div class="contacts">
+			  <h3>Contatti</h3>
+			  <p>Aurora Pia Latiano</p>
+			  <p>Tutti i diritti riservati</p>
+			  <p><a href="mailto:email@raccolta.com">email@raccolta.com</a></p>
+			  <p><a href="WebProjectPlan.html">Web Project Plan</a></p>
+			</div>
+		</footer>
+	</body>
+</html>
